@@ -1,0 +1,28 @@
+{
+  "name": "cool-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "Webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolCicada/cool-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coolCicada/cool-webpack/issues"
+  },
+  "homepage": "https://github.com/coolCicada/cool-webpack#readme",
+  "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
