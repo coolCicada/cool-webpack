@@ -1,4 +1,6 @@
-const path = require('path')
+const path = require('path');
+const HelloPlugin = require('./src/MyPlugin/HelloPlugin');
+const CopyPlugin = require('./src/MyPlugin/CopyPlugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -27,6 +29,13 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new HelloPlugin(),
+        new CopyPlugin({
+            from: path.resolve(__dirname, 'src/static'),
+            to: path.resolve(__dirname, 'dist')
+        }),
+    ],
     resolveLoader: {
         modules: ['node_modules', './src/MyLoader']
     },
